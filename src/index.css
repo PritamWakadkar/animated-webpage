@@ -105,6 +105,7 @@ body {
     @apply bg-black rounded-lg border;
   }
 
+
   .absolute-center {
     @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
   }
@@ -141,6 +142,7 @@ body {
   .animated-word {
     @apply special-font font-zentry font-black opacity-0;
     transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
+  transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
     transform-origin: 50% 50% -150px !important;
     will-change: opacity, transform;
   }
@@ -167,10 +169,7 @@ body {
     clip-path: polygon(4% 0, 83% 21%, 100% 73%, 0% 100%);
   }
 
-  .story-img-content {
-    @apply absolute w-full md:h-dvh h-[50dvh] opacity-100 left-10 top-16 md:left-0 md:top-10 lg:left-[-300px] lg:top-[-100px];
-    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1);
-  }
+  
 
   .gallery-img-container {
     @apply size-64 overflow-hidden bg-violet-300;
@@ -183,6 +182,14 @@ body {
   .gallery-img-4 {
     @apply sm:size-80 md:h-96 md:w-[25rem] rounded-lg;
   } */
+
+    
+    .floating-nav {
+  background-color: black;
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
 
   .sword-man-clip-path {
     clip-path: polygon(16% 0, 89% 15%, 75% 100%, 0 97%);
@@ -289,6 +296,17 @@ body {
   left: 0;
   animation: wobble2 var(--uib-speed) infinite ease-in-out;
 }
+
+.story-img-content {
+         transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1);
+  }
+  .story-img-mask {
+    clip-path: polygon(4% 0, 83% 21%, 100% 73%, 0% 100%);
+  }
+
+  .story-img-container{
+     filter: url("#flt_tag")
+  }
 
 @keyframes spin78236 {
   0% {

@@ -37,9 +37,9 @@ const About = () => {
         <div className='relative mb-8 mt-36 flex flex-col items-center gap-5 '>
             <h2 className='font-general text-sm uppercase md:text-[10px]'>welcome to zentry</h2>
                
-               <Animatedtitle />
+               <Animatedtitle title="disc<b>o</b>ver the world's <br /> largest shared <br /> advanture" containerClass="mt-5 !text-black text-center" />
 
-               <div className='absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center font-circular-web text-lg md:max-w-[34rem]; '>
+               <div className='absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center font-circular-web text-lg md:max-w-[34rem] text-black '>
                <p> the Game of Games begins-your life , now an epic MMORPG </p>
                <p>Zentry unites every player from countless games and  platforms</p>
                </div>
